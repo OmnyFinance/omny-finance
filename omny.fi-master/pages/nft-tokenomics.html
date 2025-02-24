@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT & Tokenomics - OMNY.FI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        helvetica: ['Helvetica', 'sans-serif'],
+                    },
+                    colors: {
+                        'omny-purple': '#6366F1',
+                        'omny-dark': '#0F172A',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-helvetica bg-omny-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-omny-dark/80 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/index.html" class="text-2xl font-bold">OMNY.FI</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/pages/about.html" class="hover:text-omny-purple transition">About</a>
+                    <a href="/pages/features.html" class="hover:text-omny-purple transition">Features</a>
+                    <a href="/pages/nft-tokenomics.html" class="hover:text-omny-purple transition">NFT & Tokenomics</a>
+                    <a href="/pages/governance.html" class="hover:text-omny-purple transition">Governance</a>
+                    <a href="/pages/roadmap.html" class="hover:text-omny-purple transition">Roadmap</a>
+                    <a href="/pages/education.html" class="hover:text-omny-purple transition">Education Hub</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button data-mobile-menu class="text-white p-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="hidden md:block bg-omny-purple px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+                    Launch App
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div data-mobile-menu-items class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="/pages/about.html" class="hover:text-omny-purple transition">About</a>
+                    <a href="/pages/features.html" class="hover:text-omny-purple transition">Features</a>
+                    <a href="/pages/nft-tokenomics.html" class="hover:text-omny-purple transition">NFT & Tokenomics</a>
+                    <a href="/pages/governance.html" class="hover:text-omny-purple transition">Governance</a>
+                    <a href="/pages/roadmap.html" class="hover:text-omny-purple transition">Roadmap</a>
+                    <a href="/pages/education.html" class="hover:text-omny-purple transition">Education Hub</a>
+                    <button class="bg-omny-purple px-6 py-2 rounded-full hover:bg-opacity-90 transition w-full">
+                        Launch App
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="pt-24">
+        <!-- Background Effects -->
+        <div class="absolute inset-0 backdrop-stars"></div>
+        <div class="absolute inset-0 bg-gradient-radial from-omny-purple/20 via-transparent to-transparent"></div>
+
+        <section class="container mx-auto px-6 py-24">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-7xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-omny-purple">
+                    NFT & Tokenomics
+                </h1>
+                <p class="text-xl text-gray-300 mb-16 text-center max-w-3xl mx-auto">
+                    Explore our innovative three-token ecosystem and NFT staking mechanics
+                </p>
+                
+                <!-- NFT Minting & Staking -->
+                <div class="relative mb-24">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-omny-purple to-purple-600 rounded-2xl blur opacity-25"></div>
+                    <div class="relative bg-omny-dark/50 p-12 rounded-2xl backdrop-blur-sm border border-omny-purple/20">
+                        <div class="flex items-center mb-8">
+                            <div class="text-4xl mr-4">🎨</div>
+                            <h2 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-omny-purple">
+                                NFT Ecosystem
+                            </h2>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <div>
+                                <p class="text-gray-300 leading-relaxed text-lg mb-6">
+                                    Mint and stake NFTs to earn sOMNY rewards while participating in our innovative liquidity pools.
+                                </p>
+                                <div class="space-y-4">
+                                    <div class="bg-omny-dark/30 p-6 rounded-xl">
+                                        <h4 class="font-bold mb-2">Minting Benefits</h4>
+                                        <ul class="space-y-2 text-gray-300">
+                                            <li class="flex items-center">
+                                                <span class="text-omny-purple mr-3">→</span>
+                                                <span>Early access to new features</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <span class="text-omny-purple mr-3">→</span>
+                                                <span>Boosted staking rewards</span>
+                                            </li>
+                                            <li class="flex items-center">
+                                                <span class="text-omny-purple mr-3">→</span>
+                                                <span>Governance voting power</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-omny-dark/30 p-6 rounded-xl border border-omny-purple/20">
+                                <div class="text-center mb-6">
+                                    <div class="text-xl font-bold mb-2">NFT Staking Stats</div>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="p-4 bg-omny-dark/50 rounded-lg">
+                                            <div class="text-2xl font-bold text-omny-purple">15,234</div>
+                                            <div class="text-sm text-gray-400">Total NFTs Staked</div>
+                                        </div>
+                                        <div class="p-4 bg-omny-dark/50 rounded-lg">
+                                            <div class="text-2xl font-bold text-omny-purple">2.5x</div>
+                                            <div class="text-sm text-gray-400">Max Yield Boost</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Token System Overview -->
+                <div class="grid md:grid-cols-3 gap-8 mb-24">
+                    <!-- OMNY Token -->
+                    <div class="group bg-omny-dark/50 p-8 rounded-2xl backdrop-blur-sm hover:bg-omny-purple/10 transition-all duration-300 border border-transparent hover:border-omny-purple/30">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-2xl font-bold mb-4">OMNY Token</h3>
+                        <p class="text-gray-300 mb-4">Governance token enabling DAO participation and platform control.</p>
+                        <div class="bg-omny-dark/30 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span>Total Supply</span>
+                                <span class="text-omny-purple">50M</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- sOMNY Token -->
+                    <div class="group bg-omny-dark/50 p-8 rounded-2xl backdrop-blur-sm hover:bg-omny-purple/10 transition-all duration-300 border border-transparent hover:border-omny-purple/30">
+                        <div class="text-4xl mb-4">🌟</div>
+                        <h3 class="text-2xl font-bold mb-4">sOMNY Token</h3>
+                        <p class="text-gray-300 mb-4">Rewards token earned through staking and liquidity provision.</p>
+                        <div class="bg-omny-dark/30 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span>Total Supply</span>
+                                <span class="text-omny-purple">1B</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- oUSD Token -->
+                    <div class="group bg-omny-dark/50 p-8 rounded-2xl backdrop-blur-sm hover:bg-omny-purple/10 transition-all duration-300 border border-transparent hover:border-omny-purple/30">
+                        <div class="text-4xl mb-4">💎</div>
+                        <h3 class="text-2xl font-bold mb-4">oUSD Token</h3>
+                        <p class="text-gray-300 mb-4">Overcollateralized stablecoin for efficient trading and liquidity.</p>
+                        <div class="bg-omny-dark/30 p-4 rounded-xl">
+                            <div class="flex justify-between items-center">
+                                <span>Collateral Ratio</span>
+                                <span class="text-omny-purple">150%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Token Distribution -->
+                <div class="relative mb-24">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-omny-purple rounded-2xl blur opacity-25"></div>
+                    <div class="relative bg-omny-dark/50 p-12 rounded-2xl backdrop-blur-sm border border-omny-purple/20">
+                        <div class="flex items-center mb-8">
+                            <div class="text-4xl mr-4">📊</div>
+                            <h2 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-omny-purple">
+                                Token Distribution
+                            </h2>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <!-- OMNY Distribution -->
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">OMNY Token Allocation</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Community Rewards</span>
+                                            <span>40%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[40%]"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Team & Advisors</span>
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[20%]"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Treasury</span>
+                                            <span>40%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[40%]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- sOMNY Distribution -->
+                            <div>
+                                <h3 class="text-xl font-bold mb-4">sOMNY Token Allocation</h3>
+                                <div class="space-y-4">
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Staking Rewards</span>
+                                            <span>50%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[50%]"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Liquidity Mining</span>
+                                            <span>30%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[30%]"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-omny-dark/30 p-4 rounded-xl">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <span>Community Growth</span>
+                                            <span>20%</span>
+                                        </div>
+                                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                                            <div class="h-full bg-gradient-to-r from-omny-purple to-purple-600 w-[20%]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="relative mt-24 border-t border-omny-purple/20">
+            <!-- Animated gradient background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-omny-purple/5 via-purple-900/10 to-indigo-900/10 animate-gradient-slow"></div>
+            
+            <!-- Radial gradient overlay -->
+            <div class="absolute inset-0 bg-gradient-radial from-transparent via-omny-dark/40 to-omny-dark/80"></div>
+            
+            <!-- Mesh pattern overlay -->
+            <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366F1' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"></div>
+            
+            <!-- Floating particles effect -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute w-2 h-2 bg-omny-purple/20 rounded-full animate-float" style="top: 10%; left: 15%"></div>
+                <div class="absolute w-3 h-3 bg-omny-purple/30 rounded-full animate-float-delayed" style="top: 60%; left: 75%"></div>
+                <div class="absolute w-2 h-2 bg-omny-purple/20 rounded-full animate-float" style="top: 80%; left: 35%"></div>
+            </div>
+
+            <div class="container mx-auto px-6 py-12 relative">
+                <div class="grid md:grid-cols-4 gap-12">
+                    <!-- Brand -->
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold">OMNY.FI</h3>
+                        <p class="text-gray-400">Transforming DeFi with AI-powered cross-chain solutions.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-gray-400 hover:text-omny-purple transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-omny-purple transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0C5.374 0 0 5.374 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.237 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.626-5.374-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-omny-purple transition">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 class="font-bold mb-4">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/pages/about.html" class="text-gray-400 hover:text-omny-purple transition">About</a></li>
+                            <li><a href="/pages/features.html" class="text-gray-400 hover:text-omny-purple transition">Features</a></li>
+                            <li><a href="/pages/nft-tokenomics.html" class="text-gray-400 hover:text-omny-purple transition">NFT & Tokenomics</a></li>
+                            <li><a href="/pages/governance.html" class="text-gray-400 hover:text-omny-purple transition">Governance</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div>
+                        <h4 class="font-bold mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="/pages/education.html" class="text-gray-400 hover:text-omny-purple transition">Education Hub</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-omny-purple transition">Documentation</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-omny-purple transition">API Reference</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-omny-purple transition">Platform Status</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="font-bold mb-4">Stay Updated</h4>
+                        <p class="text-gray-400 mb-4">Subscribe to our newsletter for the latest updates.</p>
+                        <form class="space-y-2">
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email" 
+                                class="w-full px-4 py-2 bg-omny-dark/50 rounded-lg border border-omny-purple/30 focus:border-omny-purple focus:outline-none backdrop-blur-sm"
+                            >
+                            <button type="submit" class="w-full bg-omny-purple px-4 py-2 rounded-lg hover:bg-opacity-90 transition backdrop-blur-sm">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                    <p>© 2025 OMNY.FI. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html> 
